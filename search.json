@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pract01Quarto",
     "section": "",
-    "text": "This is a Quarto website.\n/– To learn more about Quarto websites visit https://quarto.org/docs/websites. –/"
+    "text": "This is a Quarto website.\n\nGit Create repository command line:\n\ngh auth login\nGit init\ngit config –global user.name “nameuser”\ngit config –global user.email “emailuser”"
   },
   {
     "objectID": "about.html",
