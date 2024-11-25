@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pract01Quarto",
     "section": "",
-    "text": "This is a Quarto website.\n\nGit Create repository command line:\n\ngh auth login\nGit init\ngit config –global user.name “nameuser”\ngit config –global user.email “emailuser”"
+    "text": "This is a Quarto website.\n\nGit Create repository command line:\n\ngh auth login\nGit init\ngit config –global user.name “nameuser”\ngit config –global user.email “emailuser”\ncreate github token: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\ngit config –global user.password “token que se obtiene desde el perfil de github”\ngh repo create nombreRepository –public or –private\ngit remote origin https://github.com/username/nombreRepository.git\necho “#Titulo” &gt;&gt; README.md\ngit add .\ngit commit -m “mi primer commit”\ngit push -u origin master"
   },
   {
     "objectID": "about.html",
