@@ -4,4 +4,20 @@ title: "Pract01Quarto"
 
 This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+### Git Create repository command line:
+
+(@)  gh auth login
+(@)  Git init
+(@)  git config --global user.name "nameuser"
+(@)  git config --global user.email "emailuser"
+(@)  create github token: <https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
+(@)  git config --global user.password "token que se obtiene desde el perfil de github"
+(@)  gh repo create nombreRepository --public or --private
+(@)  git remote origin https://github.com/username/nombreRepository.git
+(@)  echo "#Titulo" >> README.md
+(@)  git add .
+(@)  git commit -m "mi primer commit"
+(@)  git push -u origin master
+
+
