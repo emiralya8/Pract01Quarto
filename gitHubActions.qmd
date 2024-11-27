@@ -12,7 +12,8 @@ How to Git Hub Actions
 (@)  I need to show.
 (@)  oooooooo.
 
----yaml
+---yml
+```
 name: Quarto Publish
 
 on:
@@ -39,5 +40,5 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+```
 ---
