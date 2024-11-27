@@ -8,18 +8,27 @@ website:
       - href: index.qmd
         text: Home
       - sidebar:helperspages
+      - sidebar:toolspages
       - about.qmd
-
+  
   sidebar:
     - id: helperspages
       title: "Helpers"
       style: "docked"
       background: light
-      contents: 
+      contents:
         - href: gitHubActions.qmd
           text: Git Hub Actions
         - href: gitRepositorySync.qmd
           text: Git Repository
+
+    - id: toolspages
+      title: "Tools"
+      contents:
+        - href: gitRepositorySync.qmd
+          text: Git Repository
+        
+  page-footer: "Copyright 2024, Enrique Miralles" 
       
 
 format:
