@@ -9,6 +9,7 @@ How to Git Hub Actions
 
 (@)  Complete before Pract01
 (@)  Add file yaml .yml to .github/workflow directory.
+(@)  I need to show.
 
 ---yaml
 name: Quarto Publish

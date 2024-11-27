@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "gitHubActions.html",
+    "href": "gitHubActions.html",
+    "title": "GitHubActions",
+    "section": "",
+    "text": "How to Git Hub Actions\n\nGit Actions example:\n\nComplete before Pract01\nAdd file yaml .yml to .github/workflow directory.\nI need to show.\n\n—yaml name: Quarto Publish\non: push: branches: - main workflow_dispatch:\njobs: build-deploy: runs-on: ubuntu-latest permissions: contents: write steps: - name: Check out repository uses: actions/checkout@v4\n  - name: Set up Quarto\n    uses: quarto-dev/quarto-actions/setup@v2\n\n  - name: Render and Publish\n    uses: quarto-dev/quarto-actions/publish@v2\n    with:\n      target: gh-pages\n    env:\n      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
   }
 ]
