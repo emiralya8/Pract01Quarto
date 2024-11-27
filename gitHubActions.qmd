@@ -12,7 +12,7 @@ How to Git Hub Actions
 (@)  I need to show.
 (@)  oooooooo.
 
-```python
+```quarto
 
 name: Quarto Publish
 
@@ -40,4 +40,5 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 ```
