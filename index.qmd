@@ -1,8 +1,9 @@
 ---
-title: "Pract01Quarto"
+title: "Quarto"
 ---
 
-This is a Quarto website.
 
+# How to .....
+## Diferents Manuals of many technologies
 
 
