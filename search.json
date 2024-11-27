@@ -7,6 +7,13 @@
     "text": "This is a Quarto website.\n\nGit Create repository command line:\n\ngh auth login\nGit init\ngit config –global user.name “nameuser”\ngit config –global user.email “emailuser”\ncreate github token: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\ngit config –global user.password “token que se obtiene desde el perfil de github”\ngh repo create nombreRepository –public or –private\ngit remote origin https://github.com/username/nombreRepository.git\necho “#Titulo” &gt;&gt; README.md\ngit add .\ngit commit -m “mi primer commit”\ngit push -u origin master"
   },
   {
+    "objectID": "gitHubActions.html",
+    "href": "gitHubActions.html",
+    "title": "GitHubActions",
+    "section": "",
+    "text": "How to Git Hub Actions\n\nGit Actions example:\n\nComplete before Pract01\nAdd file yaml .yml to .github/workflow directory.\nI need to show.\n\n—yaml name: Quarto Publish\non: push: branches: - main workflow_dispatch:\njobs: build-deploy: runs-on: ubuntu-latest permissions: contents: write steps: - name: Check out repository uses: actions/checkout@v4\n  - name: Set up Quarto\n    uses: quarto-dev/quarto-actions/setup@v2\n\n  - name: Render and Publish\n    uses: quarto-dev/quarto-actions/publish@v2\n    with:\n      target: gh-pages\n    env:\n      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",

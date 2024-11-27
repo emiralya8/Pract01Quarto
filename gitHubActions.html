@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pract01Quarto – Manuals</title>
+<title>GitHubActions – Manuals</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,11 +89,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gitHubActions.html"> 
+    <a class="nav-link active" href="./gitHubActions.html" aria-current="page"> 
 <span class="menu-text">Git Hub Actions</span></a>
   </li>  
   <li class="nav-item">
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#git-create-repository-command-line" id="toc-git-create-repository-command-line" class="nav-link active" data-scroll-target="#git-create-repository-command-line">Git Create repository command line:</a></li>
+  <li><a href="#git-actions-example" id="toc-git-actions-example" class="nav-link active" data-scroll-target="#git-actions-example">Git Actions example:</a></li>
   </ul>
 </nav>
     </div>
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pract01Quarto</h1>
+<h1 class="title">GitHubActions</h1>
 </div>
 
 
@@ -142,23 +142,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<section id="git-create-repository-command-line" class="level3">
-<h3 class="anchored" data-anchor-id="git-create-repository-command-line">Git Create repository command line:</h3>
+<p>How to Git Hub Actions</p>
+<section id="git-actions-example" class="level3">
+<h3 class="anchored" data-anchor-id="git-actions-example">Git Actions example:</h3>
 <ol class="example" type="1">
-<li>gh auth login</li>
-<li>Git init</li>
-<li>git config –global user.name “nameuser”</li>
-<li>git config –global user.email “emailuser”</li>
-<li>create github token: <a href="https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" class="uri">https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens</a></li>
-<li>git config –global user.password “token que se obtiene desde el perfil de github”</li>
-<li>gh repo create nombreRepository –public or –private</li>
-<li>git remote origin https://github.com/username/nombreRepository.git</li>
-<li>echo “#Titulo” &gt;&gt; README.md</li>
-<li>git add .</li>
-<li>git commit -m “mi primer commit”</li>
-<li>git push -u origin master</li>
+<li>Complete before Pract01</li>
+<li>Add file yaml .yml to .github/workflow directory.</li>
+<li>I need to show.</li>
 </ol>
+<p>—yaml name: Quarto Publish</p>
+<p>on: push: branches: - main workflow_dispatch:</p>
+<p>jobs: build-deploy: runs-on: ubuntu-latest permissions: contents: write steps: - name: Check out repository uses: actions/checkout@v4</p>
+<pre><code>  - name: Set up Quarto
+    uses: quarto-dev/quarto-actions/setup@v2
+
+  - name: Render and Publish
+    uses: quarto-dev/quarto-actions/publish@v2
+    with:
+      target: gh-pages
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}</code></pre>
+<hr>
 
 
 </section>
