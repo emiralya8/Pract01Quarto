@@ -12,7 +12,8 @@ How to Git Hub Actions
 (@)  I need to show.
 (@)  oooooooo.
 
-```
+```python
+
 name: Quarto Publish
 
 on:
