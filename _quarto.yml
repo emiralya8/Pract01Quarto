@@ -7,10 +7,11 @@ website:
     left:
       - href: index.qmd
         text: Home
-        - href: gitHubActions.qmd
-          text: Git Hub Actions
-        - href: gitRepositorySync.qmd
-          text: Git Repository
+        menu:
+          - href: gitHubActions.qmd
+            text: Git Hub Actions
+          - href: gitRepositorySync.qmd
+            text: Git Repository
       - about.qmd
 
 format:
