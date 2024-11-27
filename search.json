@@ -11,7 +11,14 @@
     "href": "gitHubActions.html",
     "title": "GitHubActions",
     "section": "",
-    "text": "How to Git Hub Actions\n\nGit Actions example:\n\nComplete before Pract01\nAdd file yaml .yml to .github/workflow directory.\nI need to show.\noooooooo.\n\n\nname: Quarto Publish\n\non:\n  push:\n    branches:\n      - main\n  workflow_dispatch:\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+    "text": "How to Git Hub Actions\n\nGit Actions example:\n\nComplete before Pract01\nAdd file yaml .yml to .github/workflow directory.\n\n\nname: Quarto Publish\n\non:\n  push:\n    branches:\n      - main\n  workflow_dispatch:\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+  },
+  {
+    "objectID": "gitRepositorySync.html",
+    "href": "gitRepositorySync.html",
+    "title": "Create Git Repository and Sync remote",
+    "section": "",
+    "text": "#Create git repository"
   },
   {
     "objectID": "about.html",
