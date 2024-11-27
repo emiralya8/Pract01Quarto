@@ -7,12 +7,20 @@ website:
     left:
       - href: index.qmd
         text: Home
-        menu:
-          - href: gitHubActions.qmd
-            text: Git Hub Actions
-          - href: gitRepositorySync.qmd
-            text: Git Repository
+      - sidebar:helperspages
       - about.qmd
+
+  sidebar:
+    - id: helperspages
+      title: "Helpers"
+      style: "docked"
+      background: light
+      contents: 
+        - href: gitHubActions.qmd
+          text: Git Hub Actions
+        - href: gitRepositorySync.qmd
+          text: Git Repository
+      
 
 format:
   html:

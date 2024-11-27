@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pract01Quarto",
     "section": "",
-    "text": "This is a Quarto website.\n\nGit Create repository command line:\n\ngh auth login\nGit init\ngit config –global user.name “nameuser”\ngit config –global user.email “emailuser”\ncreate github token: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\ngit config –global user.password “token que se obtiene desde el perfil de github”\ngh repo create nombreRepository –public or –private\ngit remote origin https://github.com/username/nombreRepository.git\necho “#Titulo” &gt;&gt; README.md\ngit add .\ngit commit -m “mi primer commit”\ngit push -u origin master"
+    "text": "This is a Quarto website."
   },
   {
     "objectID": "about.html",
@@ -18,13 +18,19 @@
     "href": "gitHubActions.html",
     "title": "GitHubActions",
     "section": "",
-    "text": "How to Git Hub Actions\n\nGit Actions example:\n\nComplete before Pract01\nAdd file yaml .yml to .github/workflow directory.\n\n\nname: Quarto Publish\n\non:\n  push:\n    branches:\n      - main\n  workflow_dispatch:\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+    "text": "How to Git Hub Actions\n\nGit Actions example:\n\nComplete before Pract01\nAdd file yaml .yml to .github/workflow directory.\n\n\nname: Quarto Publish\n\non:\n  push:\n    branches:\n      - main\n  workflow_dispatch:\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}",
+    "crumbs": [
+      "Git Hub Actions"
+    ]
   },
   {
     "objectID": "gitRepositorySync.html",
     "href": "gitRepositorySync.html",
     "title": "Create Git Repository and Sync remote",
     "section": "",
-    "text": "#Create git repository"
+    "text": "#Create git repository\n\nGit Create repository command line:\n\ngh auth login\nGit init\ngit config –global user.name “nameuser”\ngit config –global user.email “emailuser”\ncreate github token: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens\ngit config –global user.password “token que se obtiene desde el perfil de github”\ngh repo create nombreRepository –public or –private\ngit remote origin https://github.com/username/nombreRepository.git\necho “#Titulo” &gt;&gt; README.md\ngit add .\ngit commit -m “mi primer commit”\ngit push -u origin master",
+    "crumbs": [
+      "Git Repository"
+    ]
   }
 ]
