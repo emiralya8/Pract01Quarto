@@ -1,15 +1,21 @@
 project:
   type: website
+title: "Manuals"  
+author: "Enrique Miralles"
+theme: [journals]
 
 website:
-  title: "Manuals"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
       - sidebar:helperspages
       - sidebar:toolspages
-      - about.qmd
+  
   
   sidebar:
     - id: helperspages
@@ -37,5 +43,7 @@ format:
     css: styles.css
     toc: true
 
+extensions:
+  - mermaid    
 
 

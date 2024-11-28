@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Quarto",
     "section": "",
-    "text": "How to …..\n##Diferents Manuals of many technologies"
+    "text": "graph LR\n    A[Client] --&gt; B[Load Balancer]\n    B --&gt; C[Server1]\n    B --&gt; D[Server2]"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Animal example",
     "section": "",
-    "text": "About this site"
+    "text": "classDiagram\n    note \"From Duck till Zebra\"\n    Animal &lt;|-- Duck\n    note for Duck \"can fly\\ncan swim\\ncan dive\\ncan help in debugging\"\n    Animal &lt;|-- Fish\n    Animal &lt;|-- Zebra\n    Animal : +int age\n    Animal : +String gender\n    Animal: +isMammal()\n    Animal: +mate()\n    class Duck{\n        +String beakColor\n        +swim()\n        +quack()\n    }\n    class Fish{\n        -int sizeInFeet\n        -canEat()\n    }\n    class Zebra{\n        +bool is_wild\n        +run()\n    }"
   },
   {
     "objectID": "gitHubActions.html",
@@ -32,5 +32,12 @@
     "crumbs": [
       "Git Repository"
     ]
+  },
+  {
+    "objectID": "index.html#diferents-manuals-of-many-technologies",
+    "href": "index.html#diferents-manuals-of-many-technologies",
+    "title": "Quarto",
+    "section": "",
+    "text": "graph LR\n    A[Client] --&gt; B[Load Balancer]\n    B --&gt; C[Server1]\n    B --&gt; D[Server2]"
   }
 ]
