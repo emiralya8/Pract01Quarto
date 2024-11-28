@@ -3,5 +3,6 @@ title: Contact
 ---
 
 # Contact:
+Send email for any questions, we will response a few time.
 ## Email:
 ## Phone:
